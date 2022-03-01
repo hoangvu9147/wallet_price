@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BCB7FE27CCF68A00B03ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB7FD27CCF68A00B03ECB /* AppDelegate.swift */; };
+		04BCB80027CCF68A00B03ECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB7FF27CCF68A00B03ECB /* SceneDelegate.swift */; };
+		04BCB80227CCF68A00B03ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB80127CCF68A00B03ECB /* ViewController.swift */; };
+		04BCB80527CCF68A00B03ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BCB80327CCF68A00B03ECB /* Main.storyboard */; };
+		04BCB80727CCF68D00B03ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BCB80627CCF68D00B03ECB /* Assets.xcassets */; };
+		04BCB80A27CCF68D00B03ECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BCB80827CCF68D00B03ECB /* LaunchScreen.storyboard */; };
+		04BCB81527CCF68E00B03ECB /* wallet_LHVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB81427CCF68E00B03ECB /* wallet_LHVTests.swift */; };
+		04BCB81F27CCF68E00B03ECB /* wallet_LHVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB81E27CCF68E00B03ECB /* wallet_LHVUITests.swift */; };
+		04BCB82127CCF68E00B03ECB /* wallet_LHVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB82027CCF68E00B03ECB /* wallet_LHVUITestsLaunchTests.swift */; };
+		04BCB83627CD076A00B03ECB /* WLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83527CD076A00B03ECB /* WLRequest.swift */; };
+		04BCB83827CD07A500B03ECB /* WLResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83727CD07A500B03ECB /* WLResponseType.swift */; };
+		04BCB83A27CD07EC00B03ECB /* AES_256_CBC_HMAC_SHA256_Codec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83927CD07EC00B03ECB /* AES_256_CBC_HMAC_SHA256_Codec.swift */; };
+		04BCB83C27CD086C00B03ECB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83B27CD086C00B03ECB /* Data.swift */; };
+		04BCB83E27CD0A7300B03ECB /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83D27CD0A7300B03ECB /* Serializer.swift */; };
+		04BCB84027CD0C6700B03ECB /* WalletRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83F27CD0C6700B03ECB /* WalletRequestClient.swift */; };
+		04BCB84227CD126E00B03ECB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB84127CD126E00B03ECB /* Utils.swift */; };
+		04BCB84827CE597A00B03ECB /* WLSeachNamePriceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB84627CE597A00B03ECB /* WLSeachNamePriceVC.swift */; };
+		04BCB84927CE597A00B03ECB /* WLSeachNamePriceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCB84727CE597A00B03ECB /* WLSeachNamePriceVC.xib */; };
+		04BCB84C27CE59A000B03ECB /* WLHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB84A27CE599F00B03ECB /* WLHomeVC.swift */; };
+		04BCB84D27CE59A000B03ECB /* WLHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCB84B27CE59A000B03ECB /* WLHomeVC.xib */; };
+		04BCB85127CE5A8E00B03ECB /* StretchyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB85027CE5A8E00B03ECB /* StretchyHeaderView.swift */; };
+		04BCB85327CE5A9A00B03ECB /* StretchyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCB85227CE5A9A00B03ECB /* StretchyHeaderView.xib */; };
+		04BCB85727CE5B6D00B03ECB /* WLPriceHomeTBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB85527CE5B6C00B03ECB /* WLPriceHomeTBCell.swift */; };
+		04BCB85827CE5B6D00B03ECB /* WLPriceHomeTBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCB85627CE5B6D00B03ECB /* WLPriceHomeTBCell.xib */; };
+		04BCB85A27CE691300B03ECB /* PirceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB85927CE691300B03ECB /* PirceObject.swift */; };
+		04BCB85D27CE6A1500B03ECB /* PresenterBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB85C27CE6A1400B03ECB /* PresenterBase.swift */; };
+		04BCB85F27CE6B5A00B03ECB /* HomePriceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB85E27CE6B5A00B03ECB /* HomePriceRequest.swift */; };
+		04BCB86127CE6B8400B03ECB /* HomePriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB86027CE6B8400B03ECB /* HomePriceResponse.swift */; };
+		04BCB86327CE713200B03ECB /* WLNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB86227CE713100B03ECB /* WLNavigation.swift */; };
+		3100435190405852A70E91CF /* Pods_wallet_LHV_wallet_LHVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E038611C34E518F450AE2D5 /* Pods_wallet_LHV_wallet_LHVUITests.framework */; };
+		6B385273ACBAFD2BD9018BA3 /* Pods_wallet_LHVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A78EA1F6ACEFB9E8D4458 /* Pods_wallet_LHVTests.framework */; };
+		9C4CB268B5B7C31B48E0A6E8 /* Pods_wallet_LHV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC524E582C4877CD654DD30 /* Pods_wallet_LHV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04BCB81127CCF68E00B03ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04BCB7F227CCF68A00B03ECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04BCB7F927CCF68A00B03ECB;
+			remoteInfo = wallet_LHV;
+		};
+		04BCB81B27CCF68E00B03ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04BCB7F227CCF68A00B03ECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04BCB7F927CCF68A00B03ECB;
+			remoteInfo = wallet_LHV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04BCB7FA27CCF68A00B03ECB /* wallet_LHV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallet_LHV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BCB7FD27CCF68A00B03ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04BCB7FF27CCF68A00B03ECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04BCB80127CCF68A00B03ECB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04BCB80427CCF68A00B03ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04BCB80627CCF68D00B03ECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04BCB80927CCF68D00B03ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04BCB80B27CCF68D00B03ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BCB81027CCF68E00B03ECB /* wallet_LHVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wallet_LHVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BCB81427CCF68E00B03ECB /* wallet_LHVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wallet_LHVTests.swift; sourceTree = "<group>"; };
+		04BCB81A27CCF68E00B03ECB /* wallet_LHVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wallet_LHVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BCB81E27CCF68E00B03ECB /* wallet_LHVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wallet_LHVUITests.swift; sourceTree = "<group>"; };
+		04BCB82027CCF68E00B03ECB /* wallet_LHVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wallet_LHVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04BCB83527CD076A00B03ECB /* WLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLRequest.swift; sourceTree = "<group>"; };
+		04BCB83727CD07A500B03ECB /* WLResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLResponseType.swift; sourceTree = "<group>"; };
+		04BCB83927CD07EC00B03ECB /* AES_256_CBC_HMAC_SHA256_Codec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES_256_CBC_HMAC_SHA256_Codec.swift; sourceTree = "<group>"; };
+		04BCB83B27CD086C00B03ECB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		04BCB83D27CD0A7300B03ECB /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		04BCB83F27CD0C6700B03ECB /* WalletRequestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRequestClient.swift; sourceTree = "<group>"; };
+		04BCB84127CD126E00B03ECB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		04BCB84627CE597A00B03ECB /* WLSeachNamePriceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSeachNamePriceVC.swift; sourceTree = "<group>"; };
+		04BCB84727CE597A00B03ECB /* WLSeachNamePriceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLSeachNamePriceVC.xib; sourceTree = "<group>"; };
+		04BCB84A27CE599F00B03ECB /* WLHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLHomeVC.swift; sourceTree = "<group>"; };
+		04BCB84B27CE59A000B03ECB /* WLHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLHomeVC.xib; sourceTree = "<group>"; };
+		04BCB85027CE5A8E00B03ECB /* StretchyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderView.swift; sourceTree = "<group>"; };
+		04BCB85227CE5A9A00B03ECB /* StretchyHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StretchyHeaderView.xib; sourceTree = "<group>"; };
+		04BCB85527CE5B6C00B03ECB /* WLPriceHomeTBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLPriceHomeTBCell.swift; sourceTree = "<group>"; };
+		04BCB85627CE5B6D00B03ECB /* WLPriceHomeTBCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLPriceHomeTBCell.xib; sourceTree = "<group>"; };
+		04BCB85927CE691300B03ECB /* PirceObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirceObject.swift; sourceTree = "<group>"; };
+		04BCB85C27CE6A1400B03ECB /* PresenterBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterBase.swift; sourceTree = "<group>"; };
+		04BCB85E27CE6B5A00B03ECB /* HomePriceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePriceRequest.swift; sourceTree = "<group>"; };
+		04BCB86027CE6B8400B03ECB /* HomePriceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePriceResponse.swift; sourceTree = "<group>"; };
+		04BCB86227CE713100B03ECB /* WLNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLNavigation.swift; sourceTree = "<group>"; };
+		3E038611C34E518F450AE2D5 /* Pods_wallet_LHV_wallet_LHVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wallet_LHV_wallet_LHVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A09D2769C5044F018A27CB /* Pods-wallet_LHVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet_LHVTests.debug.xcconfig"; path = "Target Support Files/Pods-wallet_LHVTests/Pods-wallet_LHVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C64D1BE7AF2B47ABA70122E /* Pods-wallet_LHVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet_LHVTests.release.xcconfig"; path = "Target Support Files/Pods-wallet_LHVTests/Pods-wallet_LHVTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2EBC7DA1677811764731DDC /* Pods-wallet_LHV-wallet_LHVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet_LHV-wallet_LHVUITests.debug.xcconfig"; path = "Target Support Files/Pods-wallet_LHV-wallet_LHVUITests/Pods-wallet_LHV-wallet_LHVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D67A78EA1F6ACEFB9E8D4458 /* Pods_wallet_LHVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wallet_LHVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3FFCC0843BB6FF6D41172BC /* Pods-wallet_LHV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet_LHV.debug.xcconfig"; path = "Target Support Files/Pods-wallet_LHV/Pods-wallet_LHV.debug.xcconfig"; sourceTree = "<group>"; };
+		E454BEF8D63A1EA2EE428A3D /* Pods-wallet_LHV-wallet_LHVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet_LHV-wallet_LHVUITests.release.xcconfig"; path = "Target Support Files/Pods-wallet_LHV-wallet_LHVUITests/Pods-wallet_LHV-wallet_LHVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ECC524E582C4877CD654DD30 /* Pods_wallet_LHV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wallet_LHV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C5A79B3A4C1003D2D70DD3 /* Pods-wallet_LHV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet_LHV.release.xcconfig"; path = "Target Support Files/Pods-wallet_LHV/Pods-wallet_LHV.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04BCB7F727CCF68A00B03ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4CB268B5B7C31B48E0A6E8 /* Pods_wallet_LHV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BCB80D27CCF68E00B03ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B385273ACBAFD2BD9018BA3 /* Pods_wallet_LHVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BCB81727CCF68E00B03ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3100435190405852A70E91CF /* Pods_wallet_LHV_wallet_LHVUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BCB7F127CCF68A00B03ECB = {
+			isa = PBXGroup;
+			children = (
+				04BCB7FC27CCF68A00B03ECB /* wallet_LHV */,
+				04BCB81327CCF68E00B03ECB /* wallet_LHVTests */,
+				04BCB81D27CCF68E00B03ECB /* wallet_LHVUITests */,
+				04BCB7FB27CCF68A00B03ECB /* Products */,
+				FE407A911513C47D0342C758 /* Pods */,
+				99AF2959B18E2E7CD9904EB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04BCB7FB27CCF68A00B03ECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB7FA27CCF68A00B03ECB /* wallet_LHV.app */,
+				04BCB81027CCF68E00B03ECB /* wallet_LHVTests.xctest */,
+				04BCB81A27CCF68E00B03ECB /* wallet_LHVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04BCB7FC27CCF68A00B03ECB /* wallet_LHV */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB83027CD063000B03ECB /* UI */,
+				04BCB82F27CD061600B03ECB /* Extensions */,
+				04BCB82E27CD05DB00B03ECB /* Utils */,
+				04BCB85B27CE69EA00B03ECB /* Presenter */,
+				04BCB82D27CD05B800B03ECB /* Model */,
+				04BCB7FD27CCF68A00B03ECB /* AppDelegate.swift */,
+				04BCB7FF27CCF68A00B03ECB /* SceneDelegate.swift */,
+				04BCB80127CCF68A00B03ECB /* ViewController.swift */,
+				04BCB80327CCF68A00B03ECB /* Main.storyboard */,
+				04BCB80627CCF68D00B03ECB /* Assets.xcassets */,
+				04BCB80827CCF68D00B03ECB /* LaunchScreen.storyboard */,
+				04BCB80B27CCF68D00B03ECB /* Info.plist */,
+			);
+			path = wallet_LHV;
+			sourceTree = "<group>";
+		};
+		04BCB81327CCF68E00B03ECB /* wallet_LHVTests */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB81427CCF68E00B03ECB /* wallet_LHVTests.swift */,
+			);
+			path = wallet_LHVTests;
+			sourceTree = "<group>";
+		};
+		04BCB81D27CCF68E00B03ECB /* wallet_LHVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB81E27CCF68E00B03ECB /* wallet_LHVUITests.swift */,
+				04BCB82027CCF68E00B03ECB /* wallet_LHVUITestsLaunchTests.swift */,
+			);
+			path = wallet_LHVUITests;
+			sourceTree = "<group>";
+		};
+		04BCB82D27CD05B800B03ECB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB83327CD06FB00B03ECB /* ErrorCode */,
+				04BCB83227CD06EC00B03ECB /* Object */,
+				04BCB83127CD06E300B03ECB /* Api */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04BCB82E27CD05DB00B03ECB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB83927CD07EC00B03ECB /* AES_256_CBC_HMAC_SHA256_Codec.swift */,
+				04BCB83D27CD0A7300B03ECB /* Serializer.swift */,
+				04BCB84127CD126E00B03ECB /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		04BCB82F27CD061600B03ECB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB83B27CD086C00B03ECB /* Data.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04BCB83027CD063000B03ECB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB84E27CE59F300B03ECB /* ViewCustom */,
+				04BCB84327CE586D00B03ECB /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		04BCB83127CD06E300B03ECB /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB83427CD071C00B03ECB /* Response */,
+				04BCB83527CD076A00B03ECB /* WLRequest.swift */,
+				04BCB83F27CD0C6700B03ECB /* WalletRequestClient.swift */,
+				04BCB85E27CE6B5A00B03ECB /* HomePriceRequest.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		04BCB83227CD06EC00B03ECB /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB85927CE691300B03ECB /* PirceObject.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		04BCB83327CD06FB00B03ECB /* ErrorCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ErrorCode;
+			sourceTree = "<group>";
+		};
+		04BCB83427CD071C00B03ECB /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB83727CD07A500B03ECB /* WLResponseType.swift */,
+				04BCB86027CE6B8400B03ECB /* HomePriceResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		04BCB84327CE586D00B03ECB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB84527CE595100B03ECB /* WLSeachNamePriceVC */,
+				04BCB84427CE591F00B03ECB /* WLHomeVC */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		04BCB84427CE591F00B03ECB /* WLHomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB85427CE5B3F00B03ECB /* WLPriceHomeTBCell */,
+				04BCB84A27CE599F00B03ECB /* WLHomeVC.swift */,
+				04BCB84B27CE59A000B03ECB /* WLHomeVC.xib */,
+			);
+			path = WLHomeVC;
+			sourceTree = "<group>";
+		};
+		04BCB84527CE595100B03ECB /* WLSeachNamePriceVC */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB84627CE597A00B03ECB /* WLSeachNamePriceVC.swift */,
+				04BCB84727CE597A00B03ECB /* WLSeachNamePriceVC.xib */,
+			);
+			path = WLSeachNamePriceVC;
+			sourceTree = "<group>";
+		};
+		04BCB84E27CE59F300B03ECB /* ViewCustom */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB84F27CE5A4500B03ECB /* StretchyHeaderView */,
+				04BCB86227CE713100B03ECB /* WLNavigation.swift */,
+			);
+			path = ViewCustom;
+			sourceTree = "<group>";
+		};
+		04BCB84F27CE5A4500B03ECB /* StretchyHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB85027CE5A8E00B03ECB /* StretchyHeaderView.swift */,
+				04BCB85227CE5A9A00B03ECB /* StretchyHeaderView.xib */,
+			);
+			path = StretchyHeaderView;
+			sourceTree = "<group>";
+		};
+		04BCB85427CE5B3F00B03ECB /* WLPriceHomeTBCell */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB85527CE5B6C00B03ECB /* WLPriceHomeTBCell.swift */,
+				04BCB85627CE5B6D00B03ECB /* WLPriceHomeTBCell.xib */,
+			);
+			path = WLPriceHomeTBCell;
+			sourceTree = "<group>";
+		};
+		04BCB85B27CE69EA00B03ECB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04BCB85C27CE6A1400B03ECB /* PresenterBase.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		99AF2959B18E2E7CD9904EB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECC524E582C4877CD654DD30 /* Pods_wallet_LHV.framework */,
+				3E038611C34E518F450AE2D5 /* Pods_wallet_LHV_wallet_LHVUITests.framework */,
+				D67A78EA1F6ACEFB9E8D4458 /* Pods_wallet_LHVTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE407A911513C47D0342C758 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3FFCC0843BB6FF6D41172BC /* Pods-wallet_LHV.debug.xcconfig */,
+				F4C5A79B3A4C1003D2D70DD3 /* Pods-wallet_LHV.release.xcconfig */,
+				A2EBC7DA1677811764731DDC /* Pods-wallet_LHV-wallet_LHVUITests.debug.xcconfig */,
+				E454BEF8D63A1EA2EE428A3D /* Pods-wallet_LHV-wallet_LHVUITests.release.xcconfig */,
+				45A09D2769C5044F018A27CB /* Pods-wallet_LHVTests.debug.xcconfig */,
+				6C64D1BE7AF2B47ABA70122E /* Pods-wallet_LHVTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04BCB7F927CCF68A00B03ECB /* wallet_LHV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BCB82427CCF68E00B03ECB /* Build configuration list for PBXNativeTarget "wallet_LHV" */;
+			buildPhases = (
+				B36440289A74F902529B1EE9 /* [CP] Check Pods Manifest.lock */,
+				04BCB7F627CCF68A00B03ECB /* Sources */,
+				04BCB7F727CCF68A00B03ECB /* Frameworks */,
+				04BCB7F827CCF68A00B03ECB /* Resources */,
+				395971BF1AAC0EC5143A6285 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wallet_LHV;
+			productName = wallet_LHV;
+			productReference = 04BCB7FA27CCF68A00B03ECB /* wallet_LHV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04BCB80F27CCF68E00B03ECB /* wallet_LHVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BCB82727CCF68E00B03ECB /* Build configuration list for PBXNativeTarget "wallet_LHVTests" */;
+			buildPhases = (
+				92FDB25C2A76B1CC10E84B37 /* [CP] Check Pods Manifest.lock */,
+				04BCB80C27CCF68E00B03ECB /* Sources */,
+				04BCB80D27CCF68E00B03ECB /* Frameworks */,
+				04BCB80E27CCF68E00B03ECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04BCB81227CCF68E00B03ECB /* PBXTargetDependency */,
+			);
+			name = wallet_LHVTests;
+			productName = wallet_LHVTests;
+			productReference = 04BCB81027CCF68E00B03ECB /* wallet_LHVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04BCB81927CCF68E00B03ECB /* wallet_LHVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BCB82A27CCF68E00B03ECB /* Build configuration list for PBXNativeTarget "wallet_LHVUITests" */;
+			buildPhases = (
+				743FB6410D78D3C84A3F3AF6 /* [CP] Check Pods Manifest.lock */,
+				04BCB81627CCF68E00B03ECB /* Sources */,
+				04BCB81727CCF68E00B03ECB /* Frameworks */,
+				04BCB81827CCF68E00B03ECB /* Resources */,
+				EFA897059D749B87D401C719 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04BCB81C27CCF68E00B03ECB /* PBXTargetDependency */,
+			);
+			name = wallet_LHVUITests;
+			productName = wallet_LHVUITests;
+			productReference = 04BCB81A27CCF68E00B03ECB /* wallet_LHVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04BCB7F227CCF68A00B03ECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					04BCB7F927CCF68A00B03ECB = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					04BCB80F27CCF68E00B03ECB = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 04BCB7F927CCF68A00B03ECB;
+					};
+					04BCB81927CCF68E00B03ECB = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 04BCB7F927CCF68A00B03ECB;
+					};
+				};
+			};
+			buildConfigurationList = 04BCB7F527CCF68A00B03ECB /* Build configuration list for PBXProject "wallet_LHV" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04BCB7F127CCF68A00B03ECB;
+			productRefGroup = 04BCB7FB27CCF68A00B03ECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04BCB7F927CCF68A00B03ECB /* wallet_LHV */,
+				04BCB80F27CCF68E00B03ECB /* wallet_LHVTests */,
+				04BCB81927CCF68E00B03ECB /* wallet_LHVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04BCB7F827CCF68A00B03ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BCB80A27CCF68D00B03ECB /* LaunchScreen.storyboard in Resources */,
+				04BCB80727CCF68D00B03ECB /* Assets.xcassets in Resources */,
+				04BCB84D27CE59A000B03ECB /* WLHomeVC.xib in Resources */,
+				04BCB80527CCF68A00B03ECB /* Main.storyboard in Resources */,
+				04BCB84927CE597A00B03ECB /* WLSeachNamePriceVC.xib in Resources */,
+				04BCB85827CE5B6D00B03ECB /* WLPriceHomeTBCell.xib in Resources */,
+				04BCB85327CE5A9A00B03ECB /* StretchyHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BCB80E27CCF68E00B03ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BCB81827CCF68E00B03ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		395971BF1AAC0EC5143A6285 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wallet_LHV/Pods-wallet_LHV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wallet_LHV/Pods-wallet_LHV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wallet_LHV/Pods-wallet_LHV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		743FB6410D78D3C84A3F3AF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wallet_LHV-wallet_LHVUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92FDB25C2A76B1CC10E84B37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wallet_LHVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B36440289A74F902529B1EE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wallet_LHV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFA897059D749B87D401C719 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wallet_LHV-wallet_LHVUITests/Pods-wallet_LHV-wallet_LHVUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wallet_LHV-wallet_LHVUITests/Pods-wallet_LHV-wallet_LHVUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wallet_LHV-wallet_LHVUITests/Pods-wallet_LHV-wallet_LHVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04BCB7F627CCF68A00B03ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BCB83C27CD086C00B03ECB /* Data.swift in Sources */,
+				04BCB85D27CE6A1500B03ECB /* PresenterBase.swift in Sources */,
+				04BCB83627CD076A00B03ECB /* WLRequest.swift in Sources */,
+				04BCB84C27CE59A000B03ECB /* WLHomeVC.swift in Sources */,
+				04BCB85727CE5B6D00B03ECB /* WLPriceHomeTBCell.swift in Sources */,
+				04BCB86127CE6B8400B03ECB /* HomePriceResponse.swift in Sources */,
+				04BCB84027CD0C6700B03ECB /* WalletRequestClient.swift in Sources */,
+				04BCB85F27CE6B5A00B03ECB /* HomePriceRequest.swift in Sources */,
+				04BCB84827CE597A00B03ECB /* WLSeachNamePriceVC.swift in Sources */,
+				04BCB80227CCF68A00B03ECB /* ViewController.swift in Sources */,
+				04BCB83827CD07A500B03ECB /* WLResponseType.swift in Sources */,
+				04BCB85A27CE691300B03ECB /* PirceObject.swift in Sources */,
+				04BCB86327CE713200B03ECB /* WLNavigation.swift in Sources */,
+				04BCB84227CD126E00B03ECB /* Utils.swift in Sources */,
+				04BCB83A27CD07EC00B03ECB /* AES_256_CBC_HMAC_SHA256_Codec.swift in Sources */,
+				04BCB83E27CD0A7300B03ECB /* Serializer.swift in Sources */,
+				04BCB7FE27CCF68A00B03ECB /* AppDelegate.swift in Sources */,
+				04BCB85127CE5A8E00B03ECB /* StretchyHeaderView.swift in Sources */,
+				04BCB80027CCF68A00B03ECB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BCB80C27CCF68E00B03ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BCB81527CCF68E00B03ECB /* wallet_LHVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04BCB81627CCF68E00B03ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BCB82127CCF68E00B03ECB /* wallet_LHVUITestsLaunchTests.swift in Sources */,
+				04BCB81F27CCF68E00B03ECB /* wallet_LHVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04BCB81227CCF68E00B03ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04BCB7F927CCF68A00B03ECB /* wallet_LHV */;
+			targetProxy = 04BCB81127CCF68E00B03ECB /* PBXContainerItemProxy */;
+		};
+		04BCB81C27CCF68E00B03ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04BCB7F927CCF68A00B03ECB /* wallet_LHV */;
+			targetProxy = 04BCB81B27CCF68E00B03ECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04BCB80327CCF68A00B03ECB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BCB80427CCF68A00B03ECB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04BCB80827CCF68D00B03ECB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BCB80927CCF68D00B03ECB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04BCB82227CCF68E00B03ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04BCB82327CCF68E00B03ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04BCB82527CCF68E00B03ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3FFCC0843BB6FF6D41172BC /* Pods-wallet_LHV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5TY6K44YF3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wallet_LHV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vl.wallet-LHV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04BCB82627CCF68E00B03ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C5A79B3A4C1003D2D70DD3 /* Pods-wallet_LHV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5TY6K44YF3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wallet_LHV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vl.wallet-LHV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04BCB82827CCF68E00B03ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A09D2769C5044F018A27CB /* Pods-wallet_LHVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vl.wallet-LHVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wallet_LHV.app/wallet_LHV";
+			};
+			name = Debug;
+		};
+		04BCB82927CCF68E00B03ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C64D1BE7AF2B47ABA70122E /* Pods-wallet_LHVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vl.wallet-LHVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wallet_LHV.app/wallet_LHV";
+			};
+			name = Release;
+		};
+		04BCB82B27CCF68E00B03ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2EBC7DA1677811764731DDC /* Pods-wallet_LHV-wallet_LHVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vl.wallet-LHVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wallet_LHV;
+			};
+			name = Debug;
+		};
+		04BCB82C27CCF68E00B03ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E454BEF8D63A1EA2EE428A3D /* Pods-wallet_LHV-wallet_LHVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vl.wallet-LHVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wallet_LHV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04BCB7F527CCF68A00B03ECB /* Build configuration list for PBXProject "wallet_LHV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BCB82227CCF68E00B03ECB /* Debug */,
+				04BCB82327CCF68E00B03ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BCB82427CCF68E00B03ECB /* Build configuration list for PBXNativeTarget "wallet_LHV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BCB82527CCF68E00B03ECB /* Debug */,
+				04BCB82627CCF68E00B03ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BCB82727CCF68E00B03ECB /* Build configuration list for PBXNativeTarget "wallet_LHVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BCB82827CCF68E00B03ECB /* Debug */,
+				04BCB82927CCF68E00B03ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BCB82A27CCF68E00B03ECB /* Build configuration list for PBXNativeTarget "wallet_LHVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BCB82B27CCF68E00B03ECB /* Debug */,
+				04BCB82C27CCF68E00B03ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04BCB7F227CCF68A00B03ECB /* Project object */;
+}

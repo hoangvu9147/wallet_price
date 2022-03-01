@@ -1,0 +1,6 @@
+framework module Pods_wallet_LHV_wallet_LHVUITests {
+  umbrella header "Pods-wallet_LHV-wallet_LHVUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
