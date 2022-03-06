@@ -37,7 +37,7 @@ pod 'SwiftyRSA'
 ```
 
 ## Demo app
-[Wallet Cryto](https://www.youtube.com/watch?v=fCu6lmZiF5A)
+[Crypto Wallet Demo Video Youtube](https://www.youtube.com/watch?v=fCu6lmZiF5A)
  
 
 ## Contributing
