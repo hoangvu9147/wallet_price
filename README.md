@@ -23,6 +23,7 @@ pod 'SwiftyRSA'
 
 ## Function
 
+ ```bash
  # View price
  # Select type of counter price SGD/USD
  # Select up and down face value of price 
