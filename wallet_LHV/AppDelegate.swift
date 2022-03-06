@@ -6,12 +6,43 @@
 //
 
 import UIKit
+import SwiftyRSA
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    // Window
+    var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        do {
+            let keyPair = try SwiftyRSA.generateRSAKeyPair(sizeInBits: 2048)
+            let privateKey = try keyPair.privateKey.base64String()
+            let publicKey = try keyPair.publicKey.base64String()
+            var aesKeyBytes = [UInt8](repeating: 0, count: 32)
+            
+            if SettingApp.instance.getValuePrivateKey() == "" {
+                SettingApp.instance.setValuePrivateKey(value: privateKey)
+                SettingApp.instance.setValueKeyASE256(value: privateKey.prefix(32).description)
+            }
+            
+            if SettingApp.instance.getValuePublishKey() == "" {
+                SettingApp.instance.setValuePublishKey(value:  publicKey)
+            }
+
+            print("aesKeyBytes \(aesKeyBytes)")
+            
+//            print("publicKey \(publicKey)")
+//            print("privateKey \(privateKey)")
+
+            
+            
+        } catch let error as NSError {
+            print("error.localizedDescription \(error.localizedDescription)")
+        }
+       
+        
+        
         return true
     }
 
@@ -29,6 +60,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    
+    
     
 }
 

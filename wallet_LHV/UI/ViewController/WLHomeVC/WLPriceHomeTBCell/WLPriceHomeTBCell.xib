@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -33,7 +34,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/SCG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIQ-2v-kVv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/SGD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIQ-2v-kVv">
                                 <rect key="frame" x="87" y="13" width="37.5" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
@@ -110,7 +111,9 @@
             <viewLayoutGuide key="safeArea" id="lZ9-mX-AUV"/>
             <connections>
                 <outlet property="imgIcon" destination="kO4-QL-7E9" id="wpy-BL-1Bq"/>
+                <outlet property="lbAvalableCounter" destination="nhk-Tm-BYo" id="nPP-oc-5UJ"/>
                 <outlet property="lbBuyPrice" destination="K2G-aU-MZd" id="bmV-Kw-dzn"/>
+                <outlet property="lbCounter" destination="WIQ-2v-kVv" id="SEj-gG-Xk9"/>
                 <outlet property="lbName" destination="4cw-Uc-ObT" id="0pd-ee-McB"/>
                 <outlet property="lbSellPrice" destination="Ih1-m0-TAh" id="LD3-1s-dJj"/>
             </connections>

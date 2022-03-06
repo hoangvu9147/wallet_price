@@ -11,8 +11,10 @@ import SwiftyJSON
 import AVKit
 import AVFoundation
 import SystemConfiguration
+import CryptoSwift
 
 class Utils {
+    
     static func isValidStatusCodeSuccess(_ code: Int) -> Bool {
         return (200..<299).contains(code)
     }
@@ -56,13 +58,6 @@ class Utils {
         if SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) == false {
             return false
         }
-        
-        /* Only Working for WIFI
-         let isReachable = flags == .reachable
-         let needsConnection = flags == .connectionRequired
-         
-         return isReachable && !needsConnection
-         */
         
         // Working for Cellular and WIFI
         let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0

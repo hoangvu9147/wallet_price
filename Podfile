@@ -7,11 +7,17 @@ target 'wallet_LHV' do
 
   # Pods for wallet_LHV
   platform :ios, '10.0'
+  
+  
   pod 'CryptoSwift', '~> 1.4.1'
   pod 'Alamofire', '~> 4.8.1'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'MBProgressHUD'
   pod 'SDWebImage'
+  pod 'CryptoSwift', '~> 1.4.1'
+  pod 'DropDown'
+  pod 'DPOTPView'
+  pod 'SwiftyRSA'
   
   
   target 'wallet_LHVTests' do

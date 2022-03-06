@@ -6,8 +6,8 @@
 //
 
 import Foundation
-public enum FMMRequestName: String {
-    case  GET_All_Price = "/v3/price/all_prices_for_mobile?counter_currency=USD"
+public enum WLRequestName: String {
+    case  GET_All_Price = "/v3/price/all_prices_for_mobile?counter_currency=%@"
 }
 
 class WalletRequest: WLRequest {

@@ -74,6 +74,7 @@ class WLRequest {
     let manager = NetworkSection.sharedManager.manager
     
     var mRequestName: String
+    static var typePrice = "USD"
     
     
     init(requestName:String,responseType: WLResponseType? = nil) {
@@ -95,7 +96,7 @@ class WLRequest {
     }
     
     func makeUrl() -> String {
-        mRequestName == FMMRequestName.GET_All_Price.rawValue
+        mRequestName == String(format: WLRequestName.GET_All_Price.rawValue, WLRequest.typePrice)
         let url = "\(getDomain())\(mRequestName)"
         print("url -- : \(url)")
         return url
@@ -162,17 +163,6 @@ class WLRequest {
         }
         
         manager!.request(makeUrl(), method: mMethod, parameters: mParameters, encoding: encode,headers :mHeader).responseJSON { response in
-            
-            //            if let json = response.result.value {
-            //                print("Response JSON: ----- 0o0 ----\n \(json)")
-            //            }
-            
-            //            debugPrint(response)
-            //
-            //            print(response.request)
-            //            print(response.response)
-            //            debugPrint(response.result)
-            
             switch response.result {
             case .success:
                 

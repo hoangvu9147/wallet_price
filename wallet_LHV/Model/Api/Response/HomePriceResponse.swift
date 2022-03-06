@@ -24,7 +24,7 @@ class HomePriceResponse: NSObject {
         var priceObjs = [PirceObject]()
 
         if !Utils.isEmptyJson(json: responseJson, key: "data") {
-            print("-----value content---- responseJson media \(responseJson)")
+//            print("-----value content---- responseJson media \(responseJson)")
             let arr_json = responseJson["data"].array
             for jPrice in arr_json! {
                 let priceData = PirceObject()

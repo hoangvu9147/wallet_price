@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0406E40627D3323200EED152 /* WLHeaderPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406E40527D3323200EED152 /* WLHeaderPriceView.swift */; };
+		0406E40827D3329D00EED152 /* WLHeaderPriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0406E40727D3329D00EED152 /* WLHeaderPriceView.xib */; };
+		0406E40A27D367B800EED152 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406E40927D367B800EED152 /* String.swift */; };
+		042BD81B27D4C97C00E59A6A /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BD81A27D4C97C00E59A6A /* AES.swift */; };
+		0435CC3727D3C22400FEE0EA /* WLIntroPriceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435CC3527D3C22400FEE0EA /* WLIntroPriceVC.swift */; };
+		0435CC3827D3C22400FEE0EA /* WLIntroPriceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0435CC3627D3C22400FEE0EA /* WLIntroPriceVC.xib */; };
+		0435CC3A27D3C9EC00FEE0EA /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435CC3927D3C9EC00FEE0EA /* UIButton.swift */; };
+		0435CC3E27D3CC5F00FEE0EA /* WLIntroPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435CC3C27D3CC5F00FEE0EA /* WLIntroPriceCell.swift */; };
+		0435CC3F27D3CC5F00FEE0EA /* WLIntroPriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0435CC3D27D3CC5F00FEE0EA /* WLIntroPriceCell.xib */; };
+		0435CC4127D3D60C00FEE0EA /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435CC4027D3D60C00FEE0EA /* NSDate.swift */; };
+		047494F727CFB0250029E04D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047494F627CFB0250029E04D /* UIView.swift */; };
+		047494FB27CFE1FB0029E04D /* WLAuthenNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047494F927CFE1FB0029E04D /* WLAuthenNumberVC.swift */; };
+		047494FC27CFE1FB0029E04D /* WLAuthenNumberVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047494FA27CFE1FB0029E04D /* WLAuthenNumberVC.xib */; };
+		048D1D1A27D48F5F007F5454 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D1D1927D48F5E007F5454 /* Constants.swift */; };
+		048D1D1C27D48F70007F5454 /* SettingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D1D1B27D48F70007F5454 /* SettingApp.swift */; };
 		04BCB7FE27CCF68A00B03ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB7FD27CCF68A00B03ECB /* AppDelegate.swift */; };
 		04BCB80027CCF68A00B03ECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB7FF27CCF68A00B03ECB /* SceneDelegate.swift */; };
 		04BCB80227CCF68A00B03ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB80127CCF68A00B03ECB /* ViewController.swift */; };
@@ -18,7 +33,6 @@
 		04BCB82127CCF68E00B03ECB /* wallet_LHVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB82027CCF68E00B03ECB /* wallet_LHVUITestsLaunchTests.swift */; };
 		04BCB83627CD076A00B03ECB /* WLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83527CD076A00B03ECB /* WLRequest.swift */; };
 		04BCB83827CD07A500B03ECB /* WLResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83727CD07A500B03ECB /* WLResponseType.swift */; };
-		04BCB83A27CD07EC00B03ECB /* AES_256_CBC_HMAC_SHA256_Codec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83927CD07EC00B03ECB /* AES_256_CBC_HMAC_SHA256_Codec.swift */; };
 		04BCB83C27CD086C00B03ECB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83B27CD086C00B03ECB /* Data.swift */; };
 		04BCB83E27CD0A7300B03ECB /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83D27CD0A7300B03ECB /* Serializer.swift */; };
 		04BCB84027CD0C6700B03ECB /* WalletRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCB83F27CD0C6700B03ECB /* WalletRequestClient.swift */; };
@@ -59,6 +73,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0406E40527D3323200EED152 /* WLHeaderPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLHeaderPriceView.swift; sourceTree = "<group>"; };
+		0406E40727D3329D00EED152 /* WLHeaderPriceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLHeaderPriceView.xib; sourceTree = "<group>"; };
+		0406E40927D367B800EED152 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		042BD81A27D4C97C00E59A6A /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		0435CC3527D3C22400FEE0EA /* WLIntroPriceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLIntroPriceVC.swift; sourceTree = "<group>"; };
+		0435CC3627D3C22400FEE0EA /* WLIntroPriceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLIntroPriceVC.xib; sourceTree = "<group>"; };
+		0435CC3927D3C9EC00FEE0EA /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		0435CC3C27D3CC5F00FEE0EA /* WLIntroPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLIntroPriceCell.swift; sourceTree = "<group>"; };
+		0435CC3D27D3CC5F00FEE0EA /* WLIntroPriceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLIntroPriceCell.xib; sourceTree = "<group>"; };
+		0435CC4027D3D60C00FEE0EA /* NSDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		047494F627CFB0250029E04D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		047494F927CFE1FB0029E04D /* WLAuthenNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLAuthenNumberVC.swift; sourceTree = "<group>"; };
+		047494FA27CFE1FB0029E04D /* WLAuthenNumberVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLAuthenNumberVC.xib; sourceTree = "<group>"; };
+		048D1D1927D48F5E007F5454 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		048D1D1B27D48F70007F5454 /* SettingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingApp.swift; sourceTree = "<group>"; };
 		04BCB7FA27CCF68A00B03ECB /* wallet_LHV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallet_LHV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BCB7FD27CCF68A00B03ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BCB7FF27CCF68A00B03ECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +103,6 @@
 		04BCB82027CCF68E00B03ECB /* wallet_LHVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wallet_LHVUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04BCB83527CD076A00B03ECB /* WLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLRequest.swift; sourceTree = "<group>"; };
 		04BCB83727CD07A500B03ECB /* WLResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLResponseType.swift; sourceTree = "<group>"; };
-		04BCB83927CD07EC00B03ECB /* AES_256_CBC_HMAC_SHA256_Codec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES_256_CBC_HMAC_SHA256_Codec.swift; sourceTree = "<group>"; };
 		04BCB83B27CD086C00B03ECB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		04BCB83D27CD0A7300B03ECB /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
 		04BCB83F27CD0C6700B03ECB /* WalletRequestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRequestClient.swift; sourceTree = "<group>"; };
@@ -131,6 +159,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0406E40427D331FF00EED152 /* WLHeaderPriceView */ = {
+			isa = PBXGroup;
+			children = (
+				0406E40527D3323200EED152 /* WLHeaderPriceView.swift */,
+				0406E40727D3329D00EED152 /* WLHeaderPriceView.xib */,
+			);
+			path = WLHeaderPriceView;
+			sourceTree = "<group>";
+		};
+		0435CC3427D3C1EB00FEE0EA /* WLIntroPriceVC */ = {
+			isa = PBXGroup;
+			children = (
+				0435CC3B27D3CC3A00FEE0EA /* WLIntroPriceCell */,
+				0435CC3527D3C22400FEE0EA /* WLIntroPriceVC.swift */,
+				0435CC3627D3C22400FEE0EA /* WLIntroPriceVC.xib */,
+			);
+			path = WLIntroPriceVC;
+			sourceTree = "<group>";
+		};
+		0435CC3B27D3CC3A00FEE0EA /* WLIntroPriceCell */ = {
+			isa = PBXGroup;
+			children = (
+				0435CC3C27D3CC5F00FEE0EA /* WLIntroPriceCell.swift */,
+				0435CC3D27D3CC5F00FEE0EA /* WLIntroPriceCell.xib */,
+			);
+			path = WLIntroPriceCell;
+			sourceTree = "<group>";
+		};
+		047494F827CFE1B90029E04D /* WLAuthenNumberVC */ = {
+			isa = PBXGroup;
+			children = (
+				047494F927CFE1FB0029E04D /* WLAuthenNumberVC.swift */,
+				047494FA27CFE1FB0029E04D /* WLAuthenNumberVC.xib */,
+			);
+			path = WLAuthenNumberVC;
+			sourceTree = "<group>";
+		};
 		04BCB7F127CCF68A00B03ECB = {
 			isa = PBXGroup;
 			children = (
@@ -202,9 +267,10 @@
 		04BCB82E27CD05DB00B03ECB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				04BCB83927CD07EC00B03ECB /* AES_256_CBC_HMAC_SHA256_Codec.swift */,
 				04BCB83D27CD0A7300B03ECB /* Serializer.swift */,
 				04BCB84127CD126E00B03ECB /* Utils.swift */,
+				048D1D1927D48F5E007F5454 /* Constants.swift */,
+				048D1D1B27D48F70007F5454 /* SettingApp.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -213,6 +279,11 @@
 			isa = PBXGroup;
 			children = (
 				04BCB83B27CD086C00B03ECB /* Data.swift */,
+				047494F627CFB0250029E04D /* UIView.swift */,
+				0406E40927D367B800EED152 /* String.swift */,
+				0435CC3927D3C9EC00FEE0EA /* UIButton.swift */,
+				0435CC4027D3D60C00FEE0EA /* NSDate.swift */,
+				042BD81A27D4C97C00E59A6A /* AES.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +335,8 @@
 		04BCB84327CE586D00B03ECB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0435CC3427D3C1EB00FEE0EA /* WLIntroPriceVC */,
+				047494F827CFE1B90029E04D /* WLAuthenNumberVC */,
 				04BCB84527CE595100B03ECB /* WLSeachNamePriceVC */,
 				04BCB84427CE591F00B03ECB /* WLHomeVC */,
 			);
@@ -273,6 +346,7 @@
 		04BCB84427CE591F00B03ECB /* WLHomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				0406E40427D331FF00EED152 /* WLHeaderPriceView */,
 				04BCB85427CE5B3F00B03ECB /* WLPriceHomeTBCell */,
 				04BCB84A27CE599F00B03ECB /* WLHomeVC.swift */,
 				04BCB84B27CE59A000B03ECB /* WLHomeVC.xib */,
@@ -456,13 +530,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0435CC3827D3C22400FEE0EA /* WLIntroPriceVC.xib in Resources */,
 				04BCB80A27CCF68D00B03ECB /* LaunchScreen.storyboard in Resources */,
+				0435CC3F27D3CC5F00FEE0EA /* WLIntroPriceCell.xib in Resources */,
 				04BCB80727CCF68D00B03ECB /* Assets.xcassets in Resources */,
 				04BCB84D27CE59A000B03ECB /* WLHomeVC.xib in Resources */,
 				04BCB80527CCF68A00B03ECB /* Main.storyboard in Resources */,
 				04BCB84927CE597A00B03ECB /* WLSeachNamePriceVC.xib in Resources */,
 				04BCB85827CE5B6D00B03ECB /* WLPriceHomeTBCell.xib in Resources */,
 				04BCB85327CE5A9A00B03ECB /* StretchyHeaderView.xib in Resources */,
+				0406E40827D3329D00EED152 /* WLHeaderPriceView.xib in Resources */,
+				047494FC27CFE1FB0029E04D /* WLAuthenNumberVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,25 +668,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047494F727CFB0250029E04D /* UIView.swift in Sources */,
 				04BCB83C27CD086C00B03ECB /* Data.swift in Sources */,
+				0406E40A27D367B800EED152 /* String.swift in Sources */,
 				04BCB85D27CE6A1500B03ECB /* PresenterBase.swift in Sources */,
+				0435CC4127D3D60C00FEE0EA /* NSDate.swift in Sources */,
 				04BCB83627CD076A00B03ECB /* WLRequest.swift in Sources */,
+				0435CC3E27D3CC5F00FEE0EA /* WLIntroPriceCell.swift in Sources */,
+				0435CC3A27D3C9EC00FEE0EA /* UIButton.swift in Sources */,
 				04BCB84C27CE59A000B03ECB /* WLHomeVC.swift in Sources */,
 				04BCB85727CE5B6D00B03ECB /* WLPriceHomeTBCell.swift in Sources */,
+				047494FB27CFE1FB0029E04D /* WLAuthenNumberVC.swift in Sources */,
+				048D1D1A27D48F5F007F5454 /* Constants.swift in Sources */,
 				04BCB86127CE6B8400B03ECB /* HomePriceResponse.swift in Sources */,
 				04BCB84027CD0C6700B03ECB /* WalletRequestClient.swift in Sources */,
 				04BCB85F27CE6B5A00B03ECB /* HomePriceRequest.swift in Sources */,
 				04BCB84827CE597A00B03ECB /* WLSeachNamePriceVC.swift in Sources */,
 				04BCB80227CCF68A00B03ECB /* ViewController.swift in Sources */,
+				0406E40627D3323200EED152 /* WLHeaderPriceView.swift in Sources */,
 				04BCB83827CD07A500B03ECB /* WLResponseType.swift in Sources */,
+				042BD81B27D4C97C00E59A6A /* AES.swift in Sources */,
 				04BCB85A27CE691300B03ECB /* PirceObject.swift in Sources */,
 				04BCB86327CE713200B03ECB /* WLNavigation.swift in Sources */,
 				04BCB84227CD126E00B03ECB /* Utils.swift in Sources */,
-				04BCB83A27CD07EC00B03ECB /* AES_256_CBC_HMAC_SHA256_Codec.swift in Sources */,
+				0435CC3727D3C22400FEE0EA /* WLIntroPriceVC.swift in Sources */,
 				04BCB83E27CD0A7300B03ECB /* Serializer.swift in Sources */,
 				04BCB7FE27CCF68A00B03ECB /* AppDelegate.swift in Sources */,
 				04BCB85127CE5A8E00B03ECB /* StretchyHeaderView.swift in Sources */,
 				04BCB80027CCF68A00B03ECB /* SceneDelegate.swift in Sources */,
+				048D1D1C27D48F70007F5454 /* SettingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,14 +876,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5TY6K44YF3;
+				DEVELOPMENT_TEAM = PL7U65FA2H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wallet_LHV/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Wallet;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -817,14 +907,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5TY6K44YF3;
+				DEVELOPMENT_TEAM = PL7U65FA2H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wallet_LHV/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Wallet;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

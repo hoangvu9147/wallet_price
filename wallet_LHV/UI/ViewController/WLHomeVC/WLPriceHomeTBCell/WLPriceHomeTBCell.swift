@@ -15,6 +15,7 @@ class WLPriceHomeTBCell: UITableViewCell {
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var lbCounter: UILabel!
     @IBOutlet weak var lbBuyPrice: UILabel!
+    @IBOutlet weak var lbAvalableCounter: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,6 +28,8 @@ class WLPriceHomeTBCell: UITableViewCell {
                 lbName.text = priceObject.base
                 lbBuyPrice.text = priceObject.buy_price
                 lbSellPrice.text = priceObject.sell_price
+                lbCounter.text = "/\(priceObject.counter)"
+                lbAvalableCounter.text = "~ 0.0 \(priceObject.counter) "
             }
             
         }
