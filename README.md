@@ -36,7 +36,6 @@ pod 'SwiftyRSA'
  # Architecture model MVP 
 
 ## Demo app
-```bash
 [Wallet Cryto](https://www.youtube.com/watch?v=fCu6lmZiF5A)
  
 
