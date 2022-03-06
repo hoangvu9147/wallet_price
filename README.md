@@ -34,6 +34,7 @@ pod 'SwiftyRSA'
  # Security SSL request API 
  # Security encryption PIN code when create new
  # Architecture model MVP 
+```
 
 ## Demo app
 [Wallet Cryto](https://www.youtube.com/watch?v=fCu6lmZiF5A)
